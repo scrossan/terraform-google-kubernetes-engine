@@ -62,6 +62,7 @@ To deploy this config:
 | sync\_branch | ACM repo Git branch. If un-set, uses Config Management default. | `string` | `""` | no |
 | sync\_repo | ACM Git repo address | `string` | n/a | yes |
 | sync\_revision | ACM repo Git revision. If un-set, uses Config Management default. | `string` | `""` | no |
+| use\_tf\_google\_credentials\_env\_var | Use `GOOGLE_CREDENTIALS` environment variable to run gcloud auth activate-service-account with. Optional. | `bool` | `false` | no |
 
 ## Outputs
 

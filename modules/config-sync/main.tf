@@ -34,6 +34,8 @@ module "configsync_operator" {
   source_format        = var.source_format
   hierarchy_controller = var.hierarchy_controller
 
+  use_tf_google_credentials_env_var = var.use_tf_google_credentials_env_var
+
   operator_latest_manifest_url  = "gs://config-management-release/released/latest/config-sync-operator.yaml"
   operator_cr_template_path     = "${path.module}/templates/config-sync-config.yml.tpl"
   operator_credential_namespace = "config-management-system"

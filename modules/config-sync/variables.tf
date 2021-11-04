@@ -97,3 +97,9 @@ variable "hierarchy_controller" {
   type        = map(any)
   default     = null
 }
+
+variable "use_tf_google_credentials_env_var" {
+  description = "Use `GOOGLE_CREDENTIALS` environment variable to run gcloud auth activate-service-account with. Optional."
+  type        = bool
+  default     = false
+}
